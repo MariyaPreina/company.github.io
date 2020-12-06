@@ -1,0 +1,66 @@
+.intro {
+  position: relative;
+  width: 100%;
+  background-image: url("../img/main-bg.png");
+  background-color: #19263F;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    @media only screen and (max-width: 768px) {
+      font-size: 46px;
+      margin-bottom: 40px;
+    }
+    @media only screen and (max-width: 576px) {
+      font-size: 44px;
+    }
+    @media only screen and (max-width: 458px) {
+      font-size: 36px;
+    }
+  }
+
+  &__subtitle {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width: 576px) {
+      padding: 0 10px;
+    }
+    @media only screen and (max-width: 458px) {
+      font-size: 12px;
+    }
+  }
+}
+
