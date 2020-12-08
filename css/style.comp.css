@@ -971,7 +971,11 @@ body {
   font-family: "PT Sans", sans-serif;
   background-color: #fff; }
 
-.heading-4 {
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1060px; } }
+
+.heading-2, .heading-3 {
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -1013,7 +1017,8 @@ body {
   width: 100%;
   height: 90px;
   top: 0;
-  left: 0; }
+  left: 0;
+  margin-bottom: 80px; }
   .header__inner {
     display: flex;
     align-items: center;
@@ -1085,7 +1090,7 @@ body {
         width: 50%;
         left: 55%; } }
     .header .nav__user .nav__item:not(:last-child) {
-      margin-right: 20px; }
+      margin-right: 29px; }
       @media only screen and (max-width: 992px) {
         .header .nav__user .nav__item:not(:last-child) {
           margin-right: 0; } }
@@ -1205,10 +1210,11 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 48px;
     font-weight: 300;
+    line-height: 1.1;
     color: #fff;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px; }
+    margin-bottom: 84px; }
     @media only screen and (max-width: 768px) {
       .intro__title {
         font-size: 46px;
@@ -1224,11 +1230,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     color: #fff;
-    width: 80%;
     margin: 0 auto; }
-    @media only screen and (max-width: 992px) {
-      .intro__subtitle {
-        width: 100%; } }
     @media only screen and (max-width: 768px) {
       .intro__subtitle {
         font-size: 14px; } }
@@ -1248,13 +1250,16 @@ body {
     .about {
       margin-bottom: 40px;
       padding: 0 20px; } }
-  .about .heading-4 {
+  @media only screen and (min-width: 1200px) {
+    .about .container {
+      padding: 0; } }
+  .about .heading-2 {
     margin-bottom: 30px; }
     @media only screen and (max-width: 992px) {
-      .about .heading-4 {
+      .about .heading-2 {
         font-size: 20px; } }
     @media only screen and (max-width: 458px) {
-      .about .heading-4 {
+      .about .heading-2 {
         font-size: 16px; } }
   .about__item {
     padding: 40px 35px 30px;
@@ -1268,7 +1273,7 @@ body {
       -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
-    .about__item .heading-4 {
+    .about__item .heading-3 {
       margin-bottom: 11px; }
   .about__img-wrap {
     height: 64px;
@@ -1277,10 +1282,8 @@ body {
       .about__img-wrap {
         margin-bottom: 15px; } }
   .about .paragraph {
-    margin-bottom: 37px; }
-    @media only screen and (min-width: 992px) {
-      .about .paragraph {
-        height: 73px; } }
+    margin-bottom: 37px;
+    line-height: 1.4; }
     @media only screen and (max-width: 1200px) {
       .about .paragraph {
         font-size: 12px;
@@ -1316,10 +1319,10 @@ body {
     .products {
       margin-bottom: 40px;
       padding: 0 20px; } }
-  .products .heading-4 {
+  .products .heading-2 {
     margin-bottom: 30px; }
     @media only screen and (max-width: 768px) {
-      .products .heading-4 {
+      .products .heading-2 {
         margin-bottom: 15px; } }
   .products .subtitle {
     margin-bottom: 57px; }
@@ -1347,7 +1350,7 @@ body {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px; } }
-    .products__item .heading-4 {
+    .products__item .heading-3 {
       margin-bottom: 11px; }
     .products__item .paragraph {
       text-align: center; }
@@ -1388,18 +1391,20 @@ body {
   @media only screen and (max-width: 458px) {
     .recognition {
       padding: 0; } }
-  .recognition .heading-4 {
+  .recognition .heading-2 {
     margin-bottom: 30px; }
     @media only screen and (max-width: 768px) {
-      .recognition .heading-4 {
+      .recognition .heading-2 {
         margin-bottom: 15px; } }
   .recognition .subtitle {
     margin-bottom: 20px;
-    width: 95%; }
+    line-height: 1.5; }
     @media only screen and (max-width: 768px) {
       .recognition .subtitle {
-        width: 100%;
         margin-bottom: 10px; } }
+  @media only screen and (min-width: 992px) {
+    .recognition .container {
+      padding: 0; } }
   .recognition__logo-box {
     display: flex;
     align-items: center;
@@ -1450,7 +1455,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; }
+  margin-bottom: 28px; }
   @media only screen and (max-width: 576px) {
     .social {
       margin-bottom: 10px; } }

@@ -25,7 +25,11 @@ body {
   background-color: #fff;
 }
 
-.heading-4 {
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1060px; } }
+
+.heading-2, .heading-3 {
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
